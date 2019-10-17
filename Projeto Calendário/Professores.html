@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Projeto Calendário - Professores</title>
+		
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="bootstrap/js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="estilo.css" type="text/css">
+
+  	</head>
+
+  	<body>
+
+  		<!--NAV BAR-->
+  		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #214f85;">
+			<div class="container">
+
+				<a class="navbar-brand mb-0 h1" href="Agenda.html">
+					<img src="imgs/calendar.png" width="30" height="30" class="d-inline-block align-top" alt="">
+						Projeto Calendário
+				</a>
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  				</button>
+
+				
+			  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+				    <ul class="navbar-nav ml-auto">
+
+				      	<li class="nav-item">
+				        	<a class="nav-link" href="Agenda.html">Agenda</a>
+				      	</li>
+
+				      	<li class="nav-item active">
+				        	<a class="nav-link" href="Professores.html">Professores<span class="sr-only">(current)</span></a>
+				      	</li>
+
+				      	<li class="nav-item">
+				        	<a class="nav-link" href="Pagamento.html">Pagamentos</a>
+				      	</li>
+
+				      	<li class="nav-item dropdown">
+				       		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          		Usuário
+				        	</a>
+				        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          		<a class="dropdown-item" href="#">Logar</a>
+				          		<div class="dropdown-divider"></div>
+				          		<a class="dropdown-item" href="#">Cadastrar</a>
+				        	</div>
+				      	</li>
+				    </ul>
+			  	</div>
+
+			</div>  	
+		</nav>
+		<!-- / NAV BAR-->
+
+
+		<!-- 1 RoW-->
+		<div class="row justify-content-md-center">
+
+			<!-- Professores -->
+			<div class="professores col-md-8">
+				<h1><img src="imgs/users.png" width="50" height="50"> Professores</h1>
+				<table class="table table-striped table-hover table-condensed">
+	                <thead>
+	                    <tr>
+	                    	<th width="5%"></th>
+	                        <th></th>
+	                    </tr>
+	                </thead>
+
+	                <tbody>
+	                    <tr>
+	                        <td>
+	                        	<div class="checkbox">
+				                    <label>
+				                        <input type="checkbox">
+				                    </label>
+				                </div>
+	                        </td>
+	                        <td >Breno Hasparyk Andrade</td>
+	                    </tr>
+
+	                    <tr>
+	                        <td>
+	                        	<div class="checkbox">
+				                    <label>
+				                        <input type="checkbox">
+				                    </label>
+				                </div>
+	                        </td>
+	                        <td>João Victor Mariano</td>
+
+	                    </tr>
+
+	                    <tr>
+	                        <td>
+	                        	<div class="checkbox">
+				                    <label>
+				                        <input type="checkbox">
+				                    </label>
+				                </div>
+	                        </td>
+	                        <td>Mozaniel A</td>
+
+	                    </tr>
+	                </tbody>
+          		</table>
+
+          		<div class="botoesProfessores">
+	          		<button class="btn btn-secondary">Adicionar</button>
+	          		<button class="btn btn-secondary">Editar</button>
+	          		<button class="btn btn-secondary">Remover</button>
+	          	</div>
+
+			</div>
+
+
+			<!-- / Professores -->
+
+
+
+		</div>
+		<!-- / 1 RoW-->
+
+
+  	</body>
+</html>
+
