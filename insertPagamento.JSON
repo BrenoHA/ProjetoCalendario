@@ -1,5 +1,4 @@
-[{ "_id" : ObjectId("5da8fc7b513788fdae02c7de"),
- "PROFESSOR" : "João Victor Mariano Leão",
+[{"PROFESSOR" : "João Victor Mariano Leão",
  "DATA INICIAL" : "05/10/2019",
  "DATA FINAL" : "10/10/2019",
  "VALOR" : "300.00",
