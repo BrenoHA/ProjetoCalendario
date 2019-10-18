@@ -1,0 +1,7 @@
+[{ "_id" : ObjectId("5da8fac6513788fdae02c7dd"),
+ "PROFESSOR" : "João Victor Mariano Leão",
+ "MATÉRIA" : "EQUAÇÕES DE 2º GRAU",
+ "TIPO DE AULA" : "MONITORIA",
+ "ALUNO" : "BRENO HASPARYK ANDRADE",
+ "DATA DA AULA" : "17/10/2019",
+ "HORÁRIO DA AULA" : "8:00 ÀS 9:00" }]
