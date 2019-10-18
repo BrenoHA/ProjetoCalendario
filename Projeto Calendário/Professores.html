@@ -254,11 +254,15 @@ var campoValor = document.getElementById("arq"+id).value;
 
 										<h5>Preço das aulas</h5>
 										
-										<input type="button" value="+" onclick="AddCampos()"> <input type="text" class="form-control" id="Aula0" name="Aula0"> <input type="number" class="form-control col-4" id="Valor0" name="Valor0" placeholder="000,00 R$">
+										<input type="button" value="+" onclick="AddCampos()">
+										<label class='col-form-label'>AULA </label>
+										<input type="text" class="form-control" id="Aula0" name="Aula0"> 
+										<label class='col-form-label'>VALOR </label>
+										<input type="number" class="form-control col-4" id="Valor0" name="Valor0" placeholder="000,00 R$">
 											<script type="text/javascript">
 											//Escrevendo o código-fonte HTML e ocultando os campos criados:
 											for (iLoop = 1; iLoop <= totalCampos; iLoop++) {
-        										document.write("<div id='linha"+iLoop+"' class='form-group'> <input type='button' value='+' onclick='AddCampos()'> <label for='Aula:"+iLoop+"' class='col-form-label'>Tipo de aula: </label> <input type='text' class='form-control' id='Aula"+iLoop+"' name='Aula"+iLoop+"'> <input type='number' class='form-control col-4' id='Valor"+iLoop+"' name='Valor"+iLoop+"' placeholder='000,00 R$'> <input type='button' value='-' onclick='RemoverCampos(\""+iLoop+"\")'></div>");
+        										document.write("<div id='linha"+iLoop+"' class='form-group'> <input type='button' value='+' onclick='AddCampos()'> <input type='text' class='form-control' id='Aula"+iLoop+"' name='Aula"+iLoop+"'> <input type='number' class='form-control col-4' id='Valor"+iLoop+"' name='Valor"+iLoop+"' placeholder='000,00 R$'> <input type='button' value='-' onclick='RemoverCampos(\""+iLoop+"\")'></div>");
 											}
 											</script>
 
