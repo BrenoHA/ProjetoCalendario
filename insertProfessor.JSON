@@ -1,5 +1,4 @@
-{"_id":"5da8af129d1ab60a744ab54f",
-"NOME":"João Victor Mariano Leão",
+[{"NOME":"João Victor Mariano Leão",
 "TELEFONE":"(62) 9 93347789",
 "EMAIL":"joaovictormarianoleao@gmail.com",
 "IDADE":20,
@@ -7,24 +6,22 @@
 "AULA":{
 "NOME":"MONITORIA",
 "VALOR":300
-}}
-
-{"_id":"5da8b035ed6bd80a74e13840",
-"NOME":"João Victor Mariano Leão",
+}
+},
+{"NOME":"João Victor Mariano Leão",
 "TELEFONE":"(62) 9 93347789",
 "EMAIL":"joaovictormarianoleao@gmail.com",
 "IDADE":20,"CPF":"037.689.051-79",
 "AULA":{
 "NOME":"ENSINO MÉDIO",
 "VALOR":350
-}}
-
-{"_id":"5da8b054ed6bd80a74e13841",
-"NOME":"João Victor Mariano Leão",
+}
+},{"NOME":"João Victor Mariano Leão",
 "TELEFONE":"(62) 9 93347789",
 "EMAIL":"joaovictormarianoleao@gmail.com",
 "IDADE":20,"CPF":"037.689.051-79",
 "AULA":{
 "NOME":"ENSINO FUNDAMENTAL",
 "VALOR":275
-}}
+}
+}]
