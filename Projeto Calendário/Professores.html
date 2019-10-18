@@ -24,7 +24,9 @@ var iCount = 0;
 var linhaAtual;
 
 
+
 function AddCampos() {
+
 var hidden1 = document.getElementById("hidden1");
 var hidden2 = document.getElementById("hidden2");
 
@@ -37,6 +39,7 @@ hidden2.value = "";
 //Atualizando a lista dos campos que estão ocultos.
 //Essa lista ficará armazenada temporiariamente em hidden2;
 for (iLoop = 1; iLoop <= totalCampos; iLoop++) {
+
         if (document.getElementById("linha"+iLoop).style.display == "none") {
                 if (hidden2.value == "") {
                         hidden2.value = "linha"+iLoop;
@@ -72,7 +75,13 @@ linhasOcultas = hidden2.value.split(",");
                 */
         }
 }
+
+	 
+	
+
 }
+
+
 
 function RemoverCampos(id) {
 //Criando ponteiro para hidden1:        
@@ -98,6 +107,9 @@ var campoValor = document.getElementById("Aula"+id).value;
                 }
         }
 }
+
+
+
 </script>
 
   	</head>
@@ -261,10 +273,10 @@ var campoValor = document.getElementById("Aula"+id).value;
 										<label class='col-form-label col-md-6'>&emsp;&emsp;&emsp;&emsp;VALOR</label>
 										<input type='button' value='+' class='btn btn-success col-1' onclick='AddCampos()'>
 										 <select class="form-control col-md-5" id="Aula0" name="Aula0">
-     									 <option id="monitoria">MONITORIA</option>
-     									 <option id="ensinomedio">ENSINO MÉDIO</option>
-     									 <option id="ensinofundamental">ENSINO FUNDAMENTAL</option>
-     									 <option id="redacao">REDAÇÃO</option>
+     									 <option id="M">MONITORIA</option>
+     									 <option id="EM">ENSINO MÉDIO</option>
+     									 <option id="EF">ENSINO FUNDAMENTAL</option>
+     									 <option id="R">REDAÇÃO</option>
     									</select>
 
 										<input type="number" class="form-control col-md-5" id="Valor0" name="Valor0" placeholder="000,00 R$">
@@ -275,8 +287,8 @@ var campoValor = document.getElementById("Aula"+id).value;
 										<script type="text/javascript">
 											//Escrevendo o código-fonte HTML e ocultando os campos criados:
 											for (iLoop = 1; iLoop <= totalCampos; iLoop++) {
-        										document.write("<span id='linha"+iLoop+"' style='display:none'> <div class='form-row' ><input type='button' value='+' class='btn btn-success col-1' onclick='AddCampos()'> <select class='form-control col-md-5' id='Aula"+iLoop+"' name='Aula"+iLoop+"'> <option id='M'>MONITORIA</option> <option id='EM'>ENSINO MÉDIO</option> <option id='EF'>ENSINO FUNDAMENTAL</option> <option id='R'>REDAÇÃO</option> </select> <input type='number' class='form-control col-5' id='Valor"+iLoop+"' name='Valor"+iLoop+"' placeholder='000,00 R$'> <input type='button' value='-' class='btn btn-danger col-md-1' onclick='RemoverCampos(\""+iLoop+"\")'> </div> </span>");
-											}
+        										document.write("<span id='linha"+iLoop+"' style='display:none'> <div class='form-row' ><input type='button' value='+' class='btn btn-success col-1' onclick='AddCampos()'> <select class='form-control col-md-5' id='Aula"+iLoop+"' name='Aula"+iLoop+"'> <option id='M"+iLoop+"'>MONITORIA</option> <option id='EM"+iLoop+"'>ENSINO MÉDIO</option> <option id='EF"+iLoop+"'>ENSINO FUNDAMENTAL</option> <option id='R"+iLoop+"'>REDAÇÃO</option> </select> <input type='number' class='form-control col-5' id='Valor"+iLoop+"' name='Valor"+iLoop+"' placeholder='000,00 R$'> <input type='button' value='-' class='btn btn-danger col-md-1' onclick='RemoverCampos(\""+iLoop+"\")'> </div> </span>");
+										}
 										</script>
 
 
