@@ -349,7 +349,7 @@ var campoValor = document.getElementById("arq"+id).value;
 											<label for="profCPF" class="col-form-label">CPF: </label>
 											<input type="text" class="form-control col-3" id="profCPF">
 											<label for="profIdade" class="col-form-label">Idade: </label>
-											<input type="number" class="form-control col-1.5" id="prodIdade" min="18" max="90">
+											<input type="number" class="form-control col-2" id="prodIdade" min="18" max="90">
 
 										</div>
 										</div>
@@ -361,8 +361,7 @@ var campoValor = document.getElementById("arq"+id).value;
 										
 										<label class='col-form-label col-md-6'><center>AULA</center></label>
 										<label class='col-form-label col-md-6'>&emsp;&emsp;&emsp;&emsp;VALOR</label>
-										<input type='button' value='+' class='btn btn-success col-md-1' onclick='AddCampos()'>
-
+										<input type='button' value='+' class='btn btn-success col-1' onclick='AddCampos()'>
 										 <select class="form-control col-md-5" id="Aula0" name="Aula0">
      									 <option id="monitoria">MONITORIA</option>
      									 <option id="ensinomedio">ENSINO MÉDIO</option>
@@ -373,6 +372,8 @@ var campoValor = document.getElementById("arq"+id).value;
 										<input type="number" class="form-control col-md-5" id="Valor0" name="Valor0" placeholder="000,00 R$">
 										</div>
 
+										
+
 										<script type="text/javascript">
 											//Escrevendo o código-fonte HTML e ocultando os campos criados:
 											for (iLoop = 1; iLoop <= totalCampos; iLoop++) {
@@ -381,6 +382,10 @@ var campoValor = document.getElementById("arq"+id).value;
 										</script>
 										<input type="hidden" name="hidden1" id="hidden1">
 										<input type="hidden" name="hidden2" id="hidden2">
+
+
+
+										
 									</div>
 									</div>
 									<!--Rodapé-->
