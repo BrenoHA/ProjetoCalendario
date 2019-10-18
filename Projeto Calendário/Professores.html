@@ -275,7 +275,7 @@ var campoValor = document.getElementById("Aula"+id).value;
 										<script type="text/javascript">
 											//Escrevendo o código-fonte HTML e ocultando os campos criados:
 											for (iLoop = 1; iLoop <= totalCampos; iLoop++) {
-        										document.write("<span id='linha"+iLoop+"' style='display:none'> <div class='form-row' ><input type='button' value='+' class='btn btn-success col-1' onclick='AddCampos()'> <select class='form-control col-md-5' id='Aula"+iLoop+"' name='Aula"+iLoop+"'> <option id='monitoria'>MONITORIA</option> <option id='ensinomedio'>ENSINO MÉDIO</option> <option id='ensinofundamental'>ENSINO FUNDAMENTAL</option> <option id='redacao'>REDAÇÃO</option> </select> <input type='number' class='form-control col-5' id='Valor"+iLoop+"' name='Valor"+iLoop+"' placeholder='000,00 R$'> <input type='button' value='-' class='btn btn-danger col-md-1' onclick='RemoverCampos(\""+iLoop+"\")'> </div> </span>");
+        										document.write("<span id='linha"+iLoop+"' style='display:none'> <div class='form-row' ><input type='button' value='+' class='btn btn-success col-1' onclick='AddCampos()'> <select class='form-control col-md-5' id='Aula"+iLoop+"' name='Aula"+iLoop+"'> <option id='M'>MONITORIA</option> <option id='EM'>ENSINO MÉDIO</option> <option id='EF'>ENSINO FUNDAMENTAL</option> <option id='R'>REDAÇÃO</option> </select> <input type='number' class='form-control col-5' id='Valor"+iLoop+"' name='Valor"+iLoop+"' placeholder='000,00 R$'> <input type='button' value='-' class='btn btn-danger col-md-1' onclick='RemoverCampos(\""+iLoop+"\")'> </div> </span>");
 											}
 										</script>
 
