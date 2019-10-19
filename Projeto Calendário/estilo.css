@@ -1,4 +1,4 @@
-.calendario{
+.pagPadrao{
 	border-color: gray;
 	border-width: 0px 1px;
 	border-style: solid;
@@ -16,15 +16,6 @@
 	padding-top: 10px; 
 }
 
-.professores{
-	border-color: gray;
-	border-width: 0px 1px;
-	border-style: solid;
-	margin-top: 60px;
-	padding-top: 10px; 
-
-}
-
 .botoesProfessores{
 	text-align: right;
 }
@@ -33,16 +24,17 @@
 	width: 50%
 }
 
-.pagamentos{
-	border-color: gray;
-	border-width: 0px 1px;
+.pagamentoProfessor{
+	border-color: #E2E2E2;
+	border-width: 1px 0px 0px 0px;
 	border-style: solid;
-	margin-top: 60px;
-	padding-top: 10px; 
+	margin-top: 10px;
+	padding-top: 50px; 
 
 }
 
-.pagamentoProfessor{
+
+.usuarioForm{
 	border-color: #E2E2E2;
 	border-width: 1px 0px 0px 0px;
 	border-style: solid;
