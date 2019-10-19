@@ -1,10 +1,11 @@
-require('./models/db');
+require('./app/models/db');
 var express = require ('express');
 var app = express();
 app.set('view engine', 'ejs');
+app.use(express.static('./app/public'));
 
 app.get('/',function(req,res){
-    res.send("<html><body><h1>Ola mundo</h1></body></html>");
+    res.render("secao/agenda");
 })
 
 app.get('/Agenda.html',function(_req,res){
