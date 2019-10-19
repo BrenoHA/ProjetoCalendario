@@ -33,12 +33,18 @@
 
 }
 
-
 .usuarioForm{
 	border-color: #E2E2E2;
 	border-width: 1px 0px 0px 0px;
 	border-style: solid;
 	margin-top: 10px;
-	padding-top: 50px; 
+	padding-top: 30px; 
+
+}
+
+.usuarioLogin{
+	border-color: #E2E2E2;
+	border-width: 0px 1px 0px 0px;
+	border-style: solid;
 
 }
