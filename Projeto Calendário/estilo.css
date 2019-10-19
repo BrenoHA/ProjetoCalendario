@@ -33,16 +33,12 @@
 
 }
 
-.fundoLogin{
-	background-color: #214f85;
-}
-
 .login{
 	padding: 40px;
 	margin: 150px;
 	border-radius:0px;
-	background-color: rgba(35,35,35,0.7);
-	box-shadow: 10px 10px 20px 0px black
+	background-color: #214f85;
+	box-shadow: 10px 10px 40px black
 }
 
 .colorFontLogin{
