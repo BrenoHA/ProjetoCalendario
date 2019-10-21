@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Projeto Calendário - Pagamento</title>
+		
+		<!-- Bootstrap -->
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
+		<!--
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="bootstrap/js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		 -->
+
+		<link rel="stylesheet" href="estilo.css" type="text/css">
+
+  	</head>
+
+  	<body>
+
+  		<!--NAV BAR-->
+  		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #214f85;">
+			<div class="container">
+
+				<a class="navbar-brand mb-0 h1" href="Agenda.html">
+					<img src="imgs/calendar.png" width="30" height="30" class="d-inline-block align-top" alt="">
+						Projeto Calendário
+				</a>
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  				</button>
+				
+
+			  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+				    <ul class="navbar-nav ml-auto">
+
+				      	<li class="nav-item">
+				        	<a class="nav-link" href="Agenda.html">Agenda</a>
+				      	</li>
+
+				      	<li class="nav-item">
+				        	<a class="nav-link" href="Professores.html">Professores</a>
+				      	</li>
+
+				      	<li class="nav-item active">
+				        	<a class="nav-link" href="Pagamento.html">Pagamentos<span class="sr-only">(current)</span></a>
+				      	</li>
+
+				      	<li class="nav-item">
+				        	<a class="nav-link" href="/">| Deslogar</a>
+				      	</li>
+				      	
+				    </ul>
+			  	</div>
+
+			</div>  	
+		</nav>
+		<!-- / NAV BAR-->
+
+		<!-- 1 RoW-->
+		<div class="row justify-content-md-center">
+
+			<!-- Pagamentos -->
+			<div class="pagPadrao col-md-8">
+				<h1><img src="imgs/user.png" width="40" height="40"> Pagamentos</h1>
+
+
+				<div class="container">
+
+					<div class="pagamentoProfessor">
+						<h4>Professores:</h4>
+						<select class="form-control" id="exampleFormControlSelect1">
+							<option>-----------------------</option>
+							<option>Breno Hasparyk Andrade</option>
+							<option>João Victor Mariano</option>
+							<option>Mozaniel A</option>	
+						</select>
+					</div>
+
+					<div>
+						<br>
+						<h4>Data Inicial:</h4>
+						<label for="example-date-input" class="col-2 col-form-label"></label>
+						<input class="form-control" type="date" value="2019-10-17" id="example-date-input">
+					</div>
+
+					<div>
+						<br>
+						<h4>Data Final:</h4>
+						<label for="example-date-input" class="col-2 col-form-label"></label>
+						<input class="form-control" type="date" value="2019-10-19" id="example-date-input">
+					</div>	
+
+					<div class="botoesProfessores">
+						<br>
+		          		<button class="btn btn-secondary">Enviar</button>
+		          	</div>
+
+				</div>
+				<!-- / Pagamentos -->
+
+				<!-- Tabela-->
+				<div>
+					<h1>Tabela</h1>
+					
+
+					<table class="table table-striped table-hover table-condensed">
+		                <thead>
+		                    <tr>
+		                        <th>Data</th>
+		                        <th>Professor</th>
+		                        <th>Matéria</th>
+		                        <th>Tipo de aula</th>
+		                        <th>Aluno</th>
+		                        <th>Horário</th>
+		                    </tr>
+		                </thead>
+
+		                <tbody>
+		                    <tr>
+		                    	<td>15/10/2019</td>
+		                        <td>Breno H Andrade</td>
+		                        <td>Equações 2 Grau</td>
+		                        <td>Ensino Médio</td>
+		                        <td>Carlos Almeida</td>
+		                        <td>8:00 - 10:00</td>
+		                    </tr>
+		                    <tr>
+		                        <td>17/10/2019</td>
+		                        <td>Breno H Andrade</td>
+		                        <td>Geometria Plana</td>
+		                        <td>Ensino Fundamental</td>
+		                        <td>Rubens Almeida</td>
+		                        <td>15:00 - 17:00</td>
+
+		                    </tr>
+		                    <tr>
+		                        <td>18/10/2019</td>
+		                        <td>Breno H Andrade</td>
+		                        <td>Geometria Plana</td>
+		                        <td>Monitoria</td>
+		                        <td>Carlos Almeida</td>
+		                        <td>13:00 - 15:00</td>
+
+		                    </tr>
+		                </tbody>
+	          		</table>
+	          	</div>
+	          	<!-- / Tabela-->
+
+
+
+			</div>
+
+
+			
+
+
+				
+
+
+
+		</div>
+		<!-- / 1 RoW-->
+
+  	</body>
+</html>
