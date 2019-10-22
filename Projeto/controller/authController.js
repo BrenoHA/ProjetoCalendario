@@ -17,9 +17,9 @@ router.post('/register', async (req, res) => {
 });
 
 router.post('/logar', async (req, res) => {
-	const {login, senha} = req.body;
+	const {LOGIN, SENHA} = req.body;
 
-	const log = await Login.findOne({LOGIN: login, SENHA: senha});
+	const log = await Login.findOne({LOGIN, SENHA});
 
 
 
