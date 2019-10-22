@@ -11,23 +11,23 @@ router.post('/register', async (req, res) => {
 		const prof = await Professor.create(req.body);
 
 		return res.send({ prof });
-	} catch (err) {
-		return res.status(400).send({ error: 'Registration failed:' + err });
+	} catch(err) {
+		return res.status(400). send({ error: 'Registration failed:' + err});
 	}
 });
 
 router.post('/logar', async (req, res) => {
-	const { LOGIN, SENHA } = req.body;
+	const {LOGIN, SENHA} = req.body;
 
-	const log = await Login.findOne({ LOGIN, SENHA });
+	const log = await Login.findOne({LOGIN, SENHA});
 
 
 
-	if (!log) {
-		return res.status(400).send({ error: 'Login inválido' });
+	if(!log){
+	return res.status(400).send({ error: 'Login inválido'});
 	}
 
-
+	
 	return log;
 });
 
