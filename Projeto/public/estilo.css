@@ -1,0 +1,46 @@
+.pagPadrao{
+	border-color: gray;
+	border-width: 0px 1px;
+	border-style: solid;
+	margin-top: 60px;
+	padding-top: 10px; 
+}
+
+.botoesCalendario{
+	margin-top: 60px;
+	padding-top: 10px; 
+}
+
+.tabela{
+	margin-top: 60px;
+	padding-top: 10px; 
+}
+
+.botoesProfessores{
+	text-align: right;
+}
+
+.colunaTable{
+	width: 50%
+}
+
+.pagamentoProfessor{
+	border-color: #E2E2E2;
+	border-width: 1px 0px 0px 0px;
+	border-style: solid;
+	margin-top: 10px;
+	padding-top: 50px; 
+
+}
+
+.login{
+	padding: 40px;
+	margin: 150px;
+	border-radius:0px;
+	background-color: #214f85;
+	box-shadow: 10px 10px 40px black
+}
+
+.colorFontLogin{
+	color: #fff;
+}
