@@ -14,6 +14,4 @@ router.post('/cadastrar', async (req, res) => {
 	}
 });
 
-
-
 module.exports = app => app.use('/professor', router);
