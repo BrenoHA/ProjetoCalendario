@@ -10,6 +10,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 require('./controller/authController')(app);
+require('./controller/professorController')(app);
 
 app.get('/',function(req,res){
     res.render("Login");

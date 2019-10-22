@@ -1,23 +1,11 @@
 const express = require('express');
 const bcrypt = require('bcryptjs');
 
-const Professor = require('../models/professor');
 const Login = require('../models/login');
 
 const router = express.Router();
 
-router.post('/register', async (req, res) => {
-
-	try {
-		const prof = await Professor.create(req.body);
-
-		return res.send({ prof });
-	} catch(err) {
-		return res.status(400).send({ error: 'Registration failed:' + err});
-	}
-});
-
-router.post('/registerlogar', async (req, res) => {
+router.post('/register/logar', async (req, res) => {
 
 	try {
 		const login = await Login.create(req.body);
@@ -40,7 +28,7 @@ router.post('/logar', async (req, res) => {
 	return res.status(400).send({ error: 'Senha inválida'});
 
 	res.send ({ log });
-
+	window.location = "localhost:3000/agenda";
 });
 
 module.exports = app => app.use('/auth', router);
