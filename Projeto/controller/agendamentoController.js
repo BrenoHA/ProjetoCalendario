@@ -14,12 +14,15 @@ router.post('/agendar', async (req, res) => {
 	}
 });
 
-router.get('/agenda', (req, res) => {
-  Agenda.find().then((agendamento) => {
-    res.render('./agenda', { agendamento });
+/*router.get('/agenda', (req, res) => {
 
-});
-});
+	Agenda.find().then((agendamento) => {
+
+    	res.render('agenda', { agendamento });
+
+	});
+
+});*/
 
 
 module.exports = app => app.use('', router);
