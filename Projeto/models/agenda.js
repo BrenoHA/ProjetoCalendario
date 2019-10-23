@@ -3,38 +3,38 @@ const mongoose = require('../database/connMongo.js');
 const AgendaSchema = new mongoose.Schema({
 	PROFESSOR: {
 		type: String,
-		ref: 'professor'
+		ref: 'professor',
 		required: true
 	},
 	MATÉRIA:{
 		type: String,
 		required: true
 	},
-	TIPO DE AYLA: {
+	TIPO_DE_AULA: {
 		type: String,
 		unique: true,
 		required: true
 	},
 	ALUNO: {
-		type: Number,
-		required: true
-	},
-	DATA DA AULA: {
 		type: String,
 		required: true
 	},
-	HORÁRIO DA AULA: {
+	DATA_DA_AULA: {
 		type: Date,
+		required: true
+	},
+	HORÁRIO_DA_AULA: {
+		type: String,
 		required: true
 		
 	},
-	AULA DADA:{
-		type: boolean,
+	AULA_DADA:{
+		type: Boolean,
 		required: true,
 		default: false
 	}
 });
 
-const Agendamento = mongoose.model('agendamento', ProfessorSchema);
+const Agendamento = mongoose.model('agendamento', AgendaSchema);
 
 module.exports = Agendamento;

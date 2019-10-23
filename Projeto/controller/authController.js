@@ -27,8 +27,7 @@ router.post('/logar', async (req, res) => {
 	if(!await bcrypt.compare(SENHA, log.SENHA))
 	return res.status(400).send({ error: 'Senha inválida'});
 
-	res.send ({ log });
-	window.location = "localhost:3000/agenda";
+	res.render('agenda');
 });
 
-module.exports = app => app.use('/auth', router);
+module.exports = app => app.use('', router);

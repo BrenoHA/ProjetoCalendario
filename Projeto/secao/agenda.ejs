@@ -22,6 +22,7 @@
 		 -->
 
 		<link rel="stylesheet" href="/estilo.css" type="text/css">
+
   	</head>
 
   	<body>
@@ -117,58 +118,26 @@
 
 	                <tbody>
 	                    <tr>
-	                        <td>
-	                        	<div class="radio">
-				                    <label>
-				                        <input type="radio" name="opcoes1"> Sim
-				                    </label>
-				                    <label>
-				                        <input type="radio" name="opcoes1"> Não
-				                    </label>
-				                </div>
-	                        </td>
-	                        <td>Breno H Andrade</td>
-	                        <td>Equações 2 Grau</td>
-	                        <td>Ensino Médio</td>
-	                        <td>Carlos Almeida</td>
-	                        <td>8:00 - 10:00</td>
-	                    </tr>
-	                    <tr>
-	                        <td>
-	                        	<div class="radio">
-				                    <label>
-				                        <input type="radio" name="opcoes2"> Sim
-				                    </label>
-				                    <label>
-				                        <input type="radio" name="opcoes2"> Não
-				                    </label>
-				                </div>
-	                        </td>
-	                        <td>João Victor </td>
-	                        <td>Geometria Plana</td>
-	                        <td>Ensino Fundamental</td>
-	                        <td>Rubens Almeida</td>
-	                        <td>15:00 - 17:00</td>
+	                    	<% agendamentos.forEach(function(agenda) { %>
+	                    	
 
-	                    </tr>
-	                    <tr>
 	                        <td>
 	                        	<div class="radio">
 				                    <label>
-				                        <input type="radio" name="opcoes3"> Sim
+				                        <input type="radio" id="radioAula" idname="AULA_DADA" value="true"> Sim
 				                    </label>
 				                    <label>
-				                        <input type="radio" name="opcoes3"> Não
+				                        <input type="radio" idname="AULA_DADA" value="false" selected> Não
 				                    </label>
 				                </div>
 	                        </td>
-	                        <td>Felipe Miranda</td>
-	                        <td>Geometria Plana</td>
-	                        <td>Monitoria</td>
-	                        <td>Carlos Almeida</td>
-	                        <td>13:00 - 15:00</td>
-
+	                        <td><% agenda.PROFESSOR %></td>
+	                        <td><% agenda.MATÉRIA %></td>
+	                        <td><% agenda.TIPO_DE_AULA %></td>
+	                        <td><% agenda.ALUNO %></td>
+	                        <td><% agenda.HORÁRIO_DA_AULA %></td>
 	                    </tr>
+	                   <% }); %>
 	                </tbody>
           		</table>
 
