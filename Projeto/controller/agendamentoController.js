@@ -18,7 +18,7 @@ router.get('/agenda', async (req, res) => {
 
 	const agendados = await Agenda.find();
 
-	return res.render('agenda', {agendamentos: agendados});
+	res.render('agenda', {agendamentos: agendados});
 
 });
 
