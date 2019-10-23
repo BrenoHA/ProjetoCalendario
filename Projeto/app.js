@@ -12,6 +12,7 @@ app.use(express.json());
 require('./controller/authController')(app);
 require('./controller/professorController')(app);
 require('./controller/agendamentoController')(app);
+const Agenda = require('./models/agenda');
 
 app.get('/',function(req,res){
     res.render("Login");
