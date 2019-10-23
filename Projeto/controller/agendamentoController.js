@@ -14,14 +14,11 @@ router.post('/agendar', async (req, res) => {
 	}
 });
 
-router.get('/agenda', async (req, res) => {
+router.get('/agenda', (req, res) => {
+  Agenda.find().then((agendamento) => {
+    res.render('./agenda', { agendamento });
 
-	const agendados = await Agenda.find();
-
-	//res.send({ agendados });
-
-	res.render('agenda', {agendamento: agendados});
-
+});
 });
 
 
