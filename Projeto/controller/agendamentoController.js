@@ -20,7 +20,7 @@ router.get('/agenda', async (req, res) => {
 
 	//res.send({ agendados });
 
-	res.render('agenda', {agendados});
+	res.render('agenda', {agendamento: agendados});
 
 });
 
