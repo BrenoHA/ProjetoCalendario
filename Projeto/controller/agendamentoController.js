@@ -18,8 +18,11 @@ router.get('/agenda', async (req, res) => {
 
 	const agendados = await Agenda.find();
 
-	res.render('agenda', {agendamentos: agendados});
+	res.send({ agendados });
+
+	//res.render('agenda', {agendados});
 
 });
+
 
 module.exports = app => app.use('', router);

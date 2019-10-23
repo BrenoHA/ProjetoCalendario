@@ -118,7 +118,7 @@
 
 	                <tbody>
 	                    <tr>
-	                    	<% agendamentos.forEach( agenda => { %>
+	                    	<% agendados.forEach( agend => { %>
 	                    	
 
 	                        <td>
@@ -131,11 +131,11 @@
 				                    </label>
 				                </div>
 	                        </td>
-	                        <td><% agenda.PROFESSOR %></td>
-	                        <td><% agenda.MATÉRIA %></td>
-	                        <td><% agenda.TIPO_DE_AULA %></td>
-	                        <td><% agenda.ALUNO %></td>
-	                        <td><% agenda.HORÁRIO_DA_AULA %></td>
+	                        <td><% agend.PROFESSOR %></td>
+	                        <td><% agend.MATÉRIA %></td>
+	                        <td><% agend.TIPO_DE_AULA %></td>
+	                        <td><% agend.ALUNO %></td>
+	                        <td><% agend.HORÁRIO_DA_AULA %></td>
 	                    </tr>
 	                   <% }) %>
 	                </tbody>
