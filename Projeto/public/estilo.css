@@ -7,7 +7,7 @@
 }
 
 .botoesCalendario{
-	margin-top: 60px;
+	margin-top: 200px;
 	padding-top: 10px; 
 }
 
@@ -38,9 +38,15 @@
 	margin: 150px;
 	border-radius:0px;
 	background-color: #214f85;
-	box-shadow: 10px 10px 40px black
+	box-shadow: 10px 10px 40px black;
 }
 
 .colorFontLogin{
 	color: #fff;
+}
+
+#calendar {
+	padding: 10px;
+	margin-top: 40px;;
+    box-shadow: 0px 0px 40px black;
 }

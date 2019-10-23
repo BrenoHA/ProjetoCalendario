@@ -20,8 +20,148 @@
 		<script type="text/javascript" src="bootstrap/js/jquery-3.4.1.min.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 		 -->
+		
+		<link href='https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.min.css' rel='stylesheet' />
+		<link href='https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 		<link rel="stylesheet" href="/estilo.css" type="text/css">
+
+		<script src='https://fullcalendar.io/releases/fullcalendar/3.9.0/lib/moment.min.js'></script>
+		<script src='https://fullcalendar.io/releases/fullcalendar/3.9.0/lib/jquery.min.js'></script>
+		<script src='https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.min.js'></script>
+		<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min
+		.js'></script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+		$(document).ready(function() {
+			$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,basicWeek,basicDay'
+			},
+			defaultDate: '2019-10-23',
+			navLinks: true, // can click day/week names to navigate views
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+				events: [
+				{
+				id: 999,
+				title: 'Breno Hasparyk Andrade',
+				start: '2019-10-02T10:30:00',
+				end: '2019-10-02T12:30:00',
+				backgroundColor:'cian',
+				},
+				{
+				id: 999,
+				title: 'Breno Hasparyk Andrade',
+				start: '2019-10-09T10:30:00',
+				end: '2019-10-09T12:30:00',
+				backgroundColor:'cian',
+				},
+				{
+				id: 999,
+				title: 'Breno Hasparyk Andrade',
+				start: '2019-10-16T10:30:00',
+				end: '2019-10-16T12:30:00',
+				backgroundColor:'cian',
+				},
+				{
+				id: 999,
+				title: 'Breno Hasparyk Andrade',
+				start: '2019-10-23T10:30:00',
+				end: '2019-10-23T12:30:00',
+				backgroundColor:'cian',
+				},
+				{
+				id: 999,
+				title: 'Breno Hasparyk Andrade',
+				start: '2019-10-30T10:30:00',
+				end: '2019-10-39T12:30:00',
+				backgroundColor:'cian',
+				},
+				{
+				title: 'Breno Hasparyk Andarde',
+				start: '2019-10-29T16:30:00',
+				end: '2019-10-29T18:30:00',
+				backgroundColor:'cian',
+				},
+				{
+				title: 'João Victor Leão',
+				start: '2019-10-07T17:30:00',
+				end: '2019-10-07T19:30:00',
+				backgroundColor:'red',
+				},
+				{
+				title: 'João Victor Leão',
+				start: '2019-10-25T19:30:00',
+				end: '2019-10-25T21:30:00',
+				backgroundColor:'red',
+				},
+				{
+				title: 'João Victor Leão',
+				start: '2019-10-30T10:30:00',
+				end: '2019-10-30T12:30:00',
+				backgroundColor:'red',
+				},
+				{
+				title: 'João Victor Leão',
+				start: '2019-11-18T10:30:00',
+				end: '2019-11-18T12:30:00',
+				backgroundColor:'red',
+				},
+				{
+				title: 'Mozaniel Pereira e Silva',
+				start: '2019-10-11T08:30:00',
+				end: '2019-10-11T10:30:00',
+				backgroundColor:'green',
+				},
+				{
+				title: 'Mozaniel Pereira e Silva',
+				start: '2019-10-21T13:30:00',
+				end: '2019-10-21T15:30:00',
+				backgroundColor:'green',
+				},
+				{
+				title: 'Mozaniel Pereira e Silva',
+				start: '2019-11-04T10:30:00',
+				end: '2019-11-04T12:30:00',
+				backgroundColor:'green',
+				},
+				{
+				id: 999,
+				title: 'Mozaniel Pereira e Silva',
+				start: '2019-11-15T16:00:00',
+				backgroundColor:'green',
+				},
+				{
+				id: 999,
+				title: 'Mozaniel Pereira e Silva',
+				start: '2019-11-22T16:00:00',
+				backgroundColor:'green',
+				},
+				
+				
+			],
+			eventClick: function(calEvent, jsEvent, view, resourceObj) {
+				swal({
+					title: calEvent.title,
+					text: "Start From : "+moment(calEvent.start).format("MMMM Do YYYY, h:mm a"),
+					icon: "success",
+				});
+			}
+			});
+			$(".fc-right .fc-button-group").append(
+				'<div class="input-group datetimepicker"><input type="text" class="form-control fc-datepicker" placeholder="YYYY-MM-DD" style="padding: 0;width: 0;border: none;margin: 0;"></div>');
+				$(".fc-datepicker").datepicker({
+				dateFormat: 'yy-mm-dd',
+				showOn: "button",
+				buttonText: '<span class="input-group-addon"><i class="fas fa-calendar-alt"></i></span>'
+				});
+		});
+		</script>
 
   	</head>
 
@@ -76,7 +216,7 @@
 			<!-- Calendário-->
 			<div class="pagPadrao col-md-8">
 				<h1>Calendário</h1>
-				<p>Testando aqui</p>
+				<div id='calendar'></div>
 
 			</div>
 			<!-- / Calendário-->
