@@ -129,7 +129,7 @@ var campoValor = document.getElementById("Aula"+id).value;
 				      	</li>
 
 				      	<li class="nav-item">
-				        	<a class="nav-link" href="pagamento">Pagamentos</a>
+				        	<a class="nav-link" href="pagamentos">Pagamentos</a>
 				      	</li>
 
 				      	<li class="nav-item">
@@ -218,69 +218,67 @@ var campoValor = document.getElementById("Aula"+id).value;
 									</div>
 
 
-									<!--Corpo-->
 									<div class="modal-body">
-										<form name="form1" method="post">
-										<div class="form-group">
-											<div class="form-row">
-											<label for="profNome" class="col-form-label">Nome: </label>
-											<input type="text" class="form-control" id="profNome">
-
-											<label for="profEmail" class="col-form-label">Email: </label>
-											<input type="email" class="form-control" placeholder="email@exemplo.com" id="profEmail">
+											<form name="form1" method="post">
+											<div class="form-group">
+												<div class="form-row">
+												<label for="profNome" class="col-form-label">Nome: </label>
+												<input type="text" class="form-control" id="profNome" required="">
+	
+												<label for="profEmail" class="col-form-label">Email: </label>
+												<input type="email" class="form-control" placeholder="email@exemplo.com" id="profEmail" required="">
+											</div>
 										</div>
-									</div>
-
-										<div class="form-group">
-											<div class="form-row">
-											<label for="profTelefone" class="col-form-label">Telefone: </label>
-											<input type="text" class="form-control col-2" id="profTelefone">
-											<label for="profCPF" class="col-form-label">CPF: </label>
-											<input type="text" class="form-control col-3" id="profCPF">
-											<label for="profIdade" class="col-form-label">Idade: </label>
-											<input type="number" class="form-control col-2" id="prodIdade" min="18" max="90">
-
+	
+											<div class="form-group">
+												<div class="form-row">
+												<label for="profTelefone" class="col-form-label">Telefone: </label>
+												<input type="text" class="form-control col-2" id="profTelefone" minlength="8" maxlength="11" required="">
+												<label for="profCPF" class="col-form-label">CPF: </label>
+												<input type="text" class="form-control col-3" id="profCPF" minlength="11" maxlength="11" required="">
+												<label for="profIdade" class="col-form-label">Idade: </label>
+												<input type="number" class="form-control col-2" id="prodIdade" min="18" max="90" required="">
+	
+											</div>
+											</div>
+	
+	
+	
+											<div class="form-group">
+												<h5>Preço das aulas</h5>
+												<div class="form-row">
+											
+											
+											<label class='col-form-label col-md-6'><center>AULA</center></label>
+											<label class='col-form-label col-md-6'>&emsp;&emsp;&emsp;&emsp;VALOR</label>
+											<input type='button' value='+' class='btn btn-success col-1' onclick='AddCampos()'>
+											 <select class="form-control col-md-5" id="Aula0" name="Aula0">
+											  <option id="M">MONITORIA</option>
+											  <option id="EM">ENSINO MÉDIO</option>
+											  <option id="EF">ENSINO FUNDAMENTAL</option>
+											  <option id="R">REDAÇÃO</option>
+											</select>
+	
+											<input type="number" class="form-control col-md-5" id="Valor0" name="Valor0" placeholder="000,00 R$">
+											</div>
+	
+											
+	
+											<script type="text/javascript">
+												//Escrevendo o código-fonte HTML e ocultando os campos criados:
+												for (iLoop = 1; iLoop <= totalCampos; iLoop++) {
+													document.write("<span id='linha"+iLoop+"' style='display:none'> <div class='form-row' ><input type='button' value='+' class='btn btn-success col-1' onclick='AddCampos()'> <select class='form-control col-md-5' id='Aula"+iLoop+"' name='Aula"+iLoop+"'> <option id='M"+iLoop+"'>MONITORIA</option> <option id='EM"+iLoop+"'>ENSINO MÉDIO</option> <option id='EF"+iLoop+"'>ENSINO FUNDAMENTAL</option> <option id='R"+iLoop+"'>REDAÇÃO</option> </select> <input type='number' class='form-control col-5' id='Valor"+iLoop+"' name='Valor"+iLoop+"' placeholder='000,00 R$'> <input type='button' value='-' class='btn btn-danger col-md-1' onclick='RemoverCampos(\""+iLoop+"\")'> </div> </span>");
+											}
+											</script>
+	
+	
+											<input type="hidden" name="hidden1" id="hidden1">
+											<input type="hidden" name="hidden2" id="hidden2">
+	
+	
+											
 										</div>
 										</div>
-
-
-
-										<div class="form-group">
-											<h5>Preço das aulas</h5>
-											<div class="form-row">
-										
-										
-										<label class='col-form-label col-md-6'><center>AULA</center></label>
-										<label class='col-form-label col-md-6'>&emsp;&emsp;&emsp;&emsp;VALOR</label>
-										<input type='button' value='+' class='btn btn-success col-1' onclick='AddCampos()'>
-										 <select class="form-control col-md-5" id="Aula0" name="AULA0">
-     									 <option id="M">MONITORIA</option>
-     									 <option id="EM">ENSINO MÉDIO</option>
-     									 <option id="EF">ENSINO FUNDAMENTAL</option>
-     									 <option id="R">REDAÇÃO</option>
-    									</select>
-
-										<input type="number" class="form-control col-md-5" id="Valor0" name="VALOR0" placeholder="000,00 R$">
-										</div>
-
-										
-
-										<script type="text/javascript">
-											//Escrevendo o código-fonte HTML e ocultando os campos criados:
-											for (iLoop = 1; iLoop <= totalCampos; iLoop++) {
-        										document.write("<span id='linha"+iLoop+"' style='display:none'> <div class='form-row' ><input type='button' value='+' class='btn btn-success col-1' onclick='AddCampos()'> <input type='text' class='form-control col-5' id='Aula"+iLoop+"' name='AULA"+iLoop+"'> <input type='number' class='form-control col-5' id='Valor"+iLoop+"' name='VALOR"+iLoop+"' placeholder='000,00 R$'> <input type='button' value='-' class='btn btn-danger col-md-1' onclick='RemoverCampos(\""+iLoop+"\")'> </div> </span>");
-										}
-										</script>
-
-
-										<input type="hidden" name="hidden1" id="hidden1">
-										<input type="hidden" name="hidden2" id="hidden2">
-
-
-										
-									</div>
-									</div>
-
 									<!--Rodapé-->
 									<div class="modal-footer">
 										
